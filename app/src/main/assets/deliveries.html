@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <title>TM'S FLOWER BOUTIQUE</title>
+    <style>
+body{
+background-image:url('file:///android_drawable/background1.jpeg');
+background-repeat:no_repeat;
+background-position:center top;
+background-size:100% auto;
+}
+</style>
+</head>
+<body bgcolor="white">
+<p><center><img src="file:///android_drawable/realogo.png"style="width:600px;height:500px,"></center></p>
+<style>
+ li {
+  display: inline;
+  list-style-type: none;
+  padding: 5px;
+}
+</style>
+<ul>
+    <li><a href="our services.html">SERVICES</a></li>
+    <li><a href="flowers.html">CATALOG</a></li>
+    <li><a href="where to find us.html">WHERE TO FIND US</a></li>
+    <li><a href="contacts.html">CONTACTS</a></li>
+    <li><a href="index.html">HOME</a></li>
+</ul>
+<br></br>
+<br></br>
+<p><center><img src="file:///android_drawable/flodel.jpg" width=100 height=100/></center></p>
+<p style="font:italic small-caps 15px; background-color:#00ffff">We do deliveries anywhere in the country, all you have to do is tell us where you are or where you want your flowers to go.
+    As we like to see our customers happy we have agreed with our team that you will pay once you see your flowers and happy with them.
+    Because a happy customers means good business</p>
+<br></br>
+<h5><u>For us to be able to deliver, please enter your information below.</u></h5>
+<section>
+    <form action="">
+        FULL NAMES:<input type="full names" name="full names" required>
+        CONTACT NO:<input type="contact number" name="contact number" required>
+        HOME ADDRESS:<input type="address" name="home address" required>
+        <BR></BR>
+        DELIVERY ADDRESS:<input type="address" name="delivery address" required>
+        <input type="submit" value="submit">
+    </form>
+    <br></br>
+    <h5><u>Or else upload your proof of residence here.</u></h5>
+
+    <script type="text/javascript"language="javaScript">
+function check(){
+var ext=document.f.pdf.value;
+ext=ext.substring(ext.length-3,ext.length);
+if(ext!='pdf'){
+alert(you selected a.'+ext+
+'file;please select a.pdf file instead!');
+return false;}
+else
+return true;}
+</script>
+
+    <form method="post"name=fenctype="multipart/form-data"
+          onsubmit="return check();"
+          action="malebanetumelo62@gmail.com">
+        <p>
+            please select a pdf(.pdf) file to be sent:
+            <br>
+            <input type="file"name="pdf" size="100"
+            accept="file/pdf">
+        <p>
+            please include a short explanation:<br>
+            <textarea name="expl" rows="3"cols="40"
+                      onfocus="check();">
+</textarea>
+        <p>
+            <input type="submit" value="send">
+    </form>
+</section>
+</body>
+</html>

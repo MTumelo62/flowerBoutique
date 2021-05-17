@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+    <title>TM'S FLOWER BOUTIQUE</title>
+    <style>
+body{
+background-image:url('file:///android_drawable/background2.jpeg');
+background-repeat:no_repeat;
+background-position:center top;
+background-size:100% auto;
+}
+</style>
+</head>
+<body bgcolor="white">
+<style>
+.row{
+display:-ms-flexbox; /* IE10 */
+display:flex;
+-ms-flex-wrap:wrap; /* IE10 */
+flex-wrap:wrap;
+margin:0-16px ;
+}
+.col-25{
+-ms-flex:25%; /* IE10 */
+flex:25%;
+}
+.col-50{
+-ms-flex:50%; /* IE10 */
+flex:50%;
+}
+.col-75{
+-ms-flex:75%; /* IE10 */
+flex:75%;
+}
+.col-25,
+.col-50,
+.col-75{
+padding:0 16px;
+}
+.container{
+background-color:#f2f2f2;
+padding:5px 20px 15px 20px;
+border:1px solid lightgrey;
+border-radius:3px;
+}
+input[type=text]{
+width:50%;
+margin-bottom:20px;
+padding:12px;
+border:1px solid #ccc;
+border-radius:3px;
+}
+label{
+margin-bottom:10px;
+display:block;
+}
+.icon-container{
+margin-bottom:20px;
+padding:7px 0;
+font-size:24px;
+}
+.btn{
+background-color:#CC0099;
+color:white;
+padding:12px;
+margin:10px 0;
+border:none;
+width:50%;
+border-radius:3px;
+cursor:pointer;
+font-size:17px;
+}
+.btn:hover{
+background-color:#cc0099;
+}
+span.price{
+float:right;
+color:grey;
+}
+/* Responsive layout - when the screen is
+less than 800px wide, make the two columns
+stack on top of each other instead of next to
+each other (and change the direction - make
+the "cart" column go on top) */
+@media (max-width: 800px){
+.row{
+flex-direction:column-reverse;
+}
+.col-25{
+margin-bottom:20px;
+}
+</style>
+<div class="col-#000000">
+    <h3> PAYMENT </h3>
+    <label for="fname"> ACCEPTED
+        CARDS </label >
+    <a href="http//www.visa.com"><img src="pics/cad3.png" width=50 height=40/></a>
+    <a href="http//www.mastercard.com"><img src="pics/cad1.png" width=50 height=40/></a>
+    <a href="http//www.maestro.com"><img src="pics/cad2.png" width=50 height=40/></a>
+    <div class="icon-container"> <i class="fa fa-cc-visa" style="color:navy;"></i> <i class="fa fa-cc-amex" style="color:blue;"></i > <i class="fa fa-cc-mastercard" style="color:red;"></i><i class="fa fa-cc-discover" style="color:orange;"></i>
+    </div >
+    <div class="row">
+        <div class="col-75">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="black"></div>
+                    <h3>BILLING ADDRESS</h3>
+                    <label for="fname"><i class="fa fa-user"></i>FULL NAME</label>
+                    <input type ="text" id ="fname" name ="firstname" placeholder="jack r.monroe"> <label for ="email"><i class ="fa fa-envelope"></i> EMAIL </label > <input type="text" id="email" name="email" placeholder="jackr@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> ADDRESS </label > <input type ="text" id="adr" name="address" placeholder ="542 w. 15th
+street">
+                    <label for="city"><i class="fa fa-institution"></i> CITY </label > <input type="text" id="city" name="city" placeholder="johanesburg">
+                    <div class="row">
+                        <div class="col-50"> <label for ="state"> STATE </label > <input type ="text"
+                                                                                         id="state" name="state" placeholder="jhb">
+                        </div >
+                        <div class="col-50">
+                            <label for="postal code"> POSTAL CODE </label > <input type="text" id="postal code" name="postal code" placeholder="10001">
+                        </div >
+                    </div >
+                </div >
+
+                <label for ="cname"> NAME ON
+                    CARD </label>
+                <input type ="text" id ="cname" name ="cardname" placeholder="jack r.monroe">
+                <label for ="ccnum"> CREDIT CARD NUMBER </label > <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth"> EXP
+                    MONTH </label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="jan">
+                <div class="row">
+                    <div class="col-50">
+                        <label for="expyear"> EXP
+                            YEAR </label >
+                        <input type="text" id="expyear" name="expyear" placeholder="2020"> </div >
+                    <div class ="col-50">
+                        <label for="security code"> SECURITY CODE </label><input type="text" id="security code" name="security code" placeholder="352">
+                    </div>
+                </div >
+        <label> <input type="checkbox" checked="checked" name="sameadr"> SHIPPING ADDRESS SAME AS BILLING
+        </label>
+        <input type="submit" value="done" class="btn">
+        <h2>Or you can simply make payment by deposit to the TM'S FLOWER BOUTIQUE using the following accounts.</h2>
+        <h4><u>FNB</u></h4>
+        <h5>Account holder: Tm's flower boutique</h5>
+        <h5>Account number: 006623910</h5>
+        <br></br>
+        <h4><u>ABSA</u></h4>
+        <h5>Account holder: Tm's flower boutique</h5>
+        <h5>Account number: 124453209</h5>
+        <br></br>
+        <h4><u>STANDARD BANK</u></h4>
+        <h5>Account holder: Tm's flower boutique</h5>
+        <h5>Account number: 09123521</h5>
+        </form>
+    </div>
+</div>
+<div class="col-25">
+    <div class="container">
+        <h4> CART <span class="price" style="color:black"> <i class="fa fa-shopping-cart"></i>
+</span>
+        </h4>
+        <p><a href="#"> PRODUCT 1</a> <span class="price">R150.00</span></p> <p><a href ="#"> PRODUCT 2</a> <span class="price">R100.00 </span></p><p><a href ="#"> PRODUCT 3 </a> <span class="price">R60.00.</span></p>
+        <hr>
+        <p> TOTAL: <span class="price" style="color:black">R310.00<b> </b></span></p>
+    </div>
+</div>
+</div>
+</body>
+</html>
